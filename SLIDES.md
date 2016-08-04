@@ -2,6 +2,9 @@ title: Bitcoins and the Blockchain
 name: inverse
 layout: true
 class: middle inverse
+<style type="text/css">
+ this { color: white; }
+</style>
 
 ---
 class: center middle
@@ -15,7 +18,7 @@ class: center middle
 
 #Halloween 2008
 
-![Bitcoin white paper](https://github.com/k00ka/bitcoin/raw/master/media/bitcoin-white-paper.jpg)
+![Bitcoin white paper](https://github.com/k00ka/bitcoin/raw/master/media/bitcoin-white-paper.png)
 
 ---
 
