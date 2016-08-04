@@ -15,7 +15,7 @@ class: center middle
 
 #Halloween 2008
 
-![Bitcoins](https://github.com/k00ka/bitcoin/blob/master/media/bitcoins.jpg)
+![Bitcoin white paper](https://github.com/k00ka/bitcoin/raw/master/media/bitcoin-white-paper.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ class: center middle
 
 ---
 
-![Intermediaries](https://github.com/k00ka/bitcoin/blob/master/media/disintermediate.jpg)
+![Intermediaries](https://github.com/k00ka/bitcoin/raw/master/media/disintermediate.jpg)
 
 ---
 
@@ -101,12 +101,12 @@ Let’s focus first on:
 ---
 
 # Encryption
-![encryption](https://github.com/k00ka/bitcoin/blob/master/media/keypair-encryption.jpg)
+![encryption](https://github.com/k00ka/bitcoin/raw/master/media/keypair-encryption.jpg)
 
 ---
 
 # Signing
-![signing](https://github.com/k00ka/bitcoin/blob/master/media/keypair-signing.png)
+![signing](https://github.com/k00ka/bitcoin/raw/master/media/keypair-signing.png)
 
 ---
 
@@ -121,7 +121,7 @@ Let’s focus first on:
 
 ---
 #Transactions
-![bitcoin-transaction](https://github.com/k00ka/bitcoin/blob/master/media/bitcoin-transaction.png)
+![bitcoin-transaction](https://github.com/k00ka/bitcoin/raw/master/media/bitcoin-transaction.png)
 
 ---
 #Transactions
@@ -170,7 +170,7 @@ The proof-of-work looks like this:
 ---
 
 #Proof-of-work algorithm
-![bitcoin mining](https://github.com/k00ka/bitcoin/blob/master/media/bitcoin-mining.png)
+![bitcoin mining](https://github.com/k00ka/bitcoin/raw/master/media/bitcoin-mining.png)
 
 ---
 
