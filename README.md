@@ -27,9 +27,9 @@ Here are the steps to get you started with the repo.
   More detailed instructions for each platform are included in the footer. Refer there if you are having issues.
 
 1. Fork the repo (optional, recommended):
-  From the page https://github.com/k00ka/asteroids, click the Fork button in the top-right corner. Copy the new repo address (in a box just below the thick red line) into your clipboard. Detailed instructions on forking a repo can be found here: https://help.github.com/articles/fork-a-repo/
+  From the page https://github.com/k00ka/bitcoin, click the Fork button in the top-right corner. Copy the new repo address (in a box just below the thick red line) into your clipboard. Detailed instructions on forking a repo can be found here: https://help.github.com/articles/fork-a-repo/
 
-1. At Ryatta Group we use rbenv, and so we've included some optional elements - just skip them if you're using rvm or are not versioning your Ruby. If you forked the repo above, your repo_address will be in your clipboard. If not, you should use my repo_address ``git@github.com:k00ka/asteroids.git``
+1. At Ryatta Group we use rbenv, and so we've included some optional elements - just skip them if you're using rvm or are not versioning your Ruby. If you forked the repo above, your repo_address will be in your clipboard. If not, you should use my repo_address ``git@github.com:k00ka/bitcoin.git``
 
   ```sh
   % git clone <repo_address>
