@@ -123,10 +123,13 @@ Let’s focus first on:
 > Q: Which of the above are features of keypairs?
 
 ---
+
 #Transactions
+
 ![bitcoin-transaction](https://github.com/k00ka/bitcoin/raw/master/media/bitcoin-transaction.png)
 
 ---
+
 #Transactions
 
 * when you pay with Bitcoin, you sign the Bitcoin with your (Bitcoin wallet's) signature.  
@@ -135,6 +138,7 @@ Let’s focus first on:
 * from this ledger, we can be sure that the Bitcoins are "real"
 
 --- 
+
 #Double-spending problem
 
 * we can determine from the chain of signatures that Bitcoins are "real"
@@ -144,21 +148,32 @@ Let’s focus first on:
 * with proof of the time of a transaction, we can rule that the first payee was given the coin and all later transfers were invalid
 
 ---
+
 #Time-stamps
+
 * a certain server or servers could collect transactions occuring before a certain time
 * all new transactions would be grouped, hashed and chained to create a widely accessible document
 * however this task must be done peer-to-peer, such that there are a large number of sources
+
 ---
+
 #Mining
+
 * how to distribute the collection, grouping, hashing and chaining of transactions?
+
 * Proof-of-work is a scheme in which the server that solves a specially selected problem first wins a prize
+
 * benefits:
   1. miners have incentive to mine (the prize)
   1. the difficulty of the PoW can be increased or decreased based on the number and power of miners
   1. since miners are competing, no one miner has control
+
 ---
+
 #Proof-of-work algorithm
+
 The proof-of-work looks like this:
+
 1. A block starts out with a header and a single transaction to pay the miner reward.  This transaction has a special name (called the “coinbase”).
 1. Transactions are added to the block.
 1. A block “header” of fixed length is formed by doing cryptographic hashes of the transactions (called the Merkle root).
@@ -178,24 +193,9 @@ The proof-of-work looks like this:
 ---
 
 #Wallet
+
 * A bitcoin wallet is software designed to hold Bitcoins and make Bitcoin transactions possible.
 * It is possible to determine at any point in time the amount in a specific wallet.
-
----
-
-Bitcoins 
-
-
-Why should we trust the blockchain?
-
-
----
-
-What is the blockchain?
-
-Possible to determine at any point in time the amount in a specific wallet.
-
-
 
 ---
 
@@ -204,113 +204,15 @@ blockchain = shared document (some say database) = ledger of all transactions
 transactions are in blocks
 blocks are chained
 
-As Bitcoin transactions take place, they are broadcast to the network — a network made up of every computer on the internet running Bitcoin software — whose job is to maintain the blockchain, the digital ledger containing the record of all confirmed Bitcoin transactions, ever. The blockchain is kept in chronological order and certified as not-messed-with through cryptography. In fact, there are a few clever tricks built in so that altering a ledger entry in the blockchain invalidates all subsequent entries.
-
-
----
-
-Transactions
-
-“We define an electronic coin as a chain of digital signatures. Each owner transfers the coin to the next by digitally signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin. A payee can verify the signatures to verify the chain of ownership.”
-
-The problem of course is the payee can't verify that one of the owners did not double-spend the coin. A common solution is to introduce a trusted central authority, or mint, that checks every transaction for double spending. After each transaction, the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. The problem with this solution is that the fate of the entire money system depends on the company running the mint, with every transaction having to go through them, just like a bank.
-We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don't care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced [1], and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.
-
-
-
----
-
-
-What is a blockchain?
-A shared document
-
-A dynamic shared document
-
-A dynamic shared document 
-
-Distributed ledger
-https://cdn-images-1.medium.com/max/800/1*nnpzTe1hx74WKICL3Gj34A.jpeg
-Credit cards
-Barter
-Stock exchange
-Western Union
-Interac
-ABM withdrawal
-Cheque
-Cash
-Bitcoin
-
-
----
-
-what is a wallet?
-
-
-
----
-
-Uses of blockchain?
-Currency
-- at rest (store of value)
-e.g. David has 200 Bitcoin in his wallet
-- in motion (payments, intermediary)
-e.g. David paid 100 Bitcoin to Jason
-e.g. David paid 200 CAD to Jason
-Digital assets
-- items of value
-e.g. David has 200 shares of Basecamp
-e.g. David has 40,000 Air Miles
-Identity
-- publicly verifiable ID
-- reputation
-Verifiable data
-- immutable record
-Smart contracts
-- 
-
-
-
----
-
-What do blockchains give you out of the box?
-
-Arguably the single most important benefit of distributed ledgers is that you can 
-
-* create agreement about facts and processes across entities without a single entity being able to unilaterally make changes
-
-Timestamped events are agreed upon across multiple, possibly hostile or non-trusting entities.
-
-Catastrophic data loss becomes a non-issue due to the constant replication between all participants.
-
-You are able to prove that data hasn’t been unilaterally tampered. It takes some significant coordination to alter data that has already been written and replicated on a blockchain.
-
-If digital signatures are used to initiate transactions, and if the keys are carefully managed:
-
-Ability to prove authenticity (who initiated this transaction?)
-Nonrepudiation (hard for participants to deny responsibility)
-
-For digital tokens (which either represent physical items or are themselves the dematerialised asset), if bitcoin’s “UXTO” transaction paradigm is used, you get:
-
-Full traceability of ownership history
-Sound business logic validation that only lets you spend what you have received
-A guaranteed group-agreed resolution if the same token is transferred to two different people simultaneously
-Atomic transactions – payments with multiple legs either succeed collectively or fail collectively.  There is no risk of a single leg failing (known as “Herstatt risk“). This includes single payments to multiple recipients, or asset swaps (for example I give you 5 of these for 3 of those).
-
-
-
-Transactions
-
-
-
 ---
 
 #Choose a Wallet
+
 1. Desktop
 1. Mobile
 1. Web
 
 ---
-class:middle
 
 Choose a wallet: https://bitcoin.org/en/choose-your-wallet  
 Bitcoin Core is a good one: https://bitcoin.org/en/download  
@@ -325,13 +227,12 @@ https://bitcoin.org/bin/bitcoin-core-0.12.1/SHA256SUMS.asc
 1. Compare what you got to what's in the checksum file. If they don't match, don't install it!
 
 ---
+
 #Creating your wallet
+
 To get started with Bitcoin Core, you need to sync the blockchain. Syncing takes a long time and consumes up to 80GB of storage, but you can "prune" the blockchain to the last two weeks by running the client with ``--prune=550``
 
 The Bitcoin Core (bitcoin-qt) client has a built-in P2P client to bring your copy of the blockchain up-to-date. The initial run takes several hours (even with prune set) to download the blockchain.
-
-
----
 
 ---
 #Resources
