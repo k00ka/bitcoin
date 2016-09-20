@@ -5,7 +5,7 @@ Slides and assets for the Blockchain workshop [first presented at Toronto Ruby H
 Workshop for learning Blockchains and Bitcoins
 Created by David Andrews
 
-![Blockchains](https://github.com/k00ka/bitcoin/blob/master/media/screenshot.jpg)
+![Blockchains](https://github.com/k00ka/bitcoin/blob/master/media/block0.png)
 
 Slides for the workshop are here:  
 https://gnab.github.io/remark/remarkise?url=https://raw.githubusercontent.com/k00ka/bitcoin/master/SLIDES.md
